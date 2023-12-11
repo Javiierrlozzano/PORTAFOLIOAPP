@@ -1,0 +1,64 @@
+	/* Agregar estilos personalizados aquí */
+    .table th,
+    .table td {
+        text-align: center;
+        vertical-align: middle; /* Alinea verticalmente el contenido */
+    }
+
+    .table thead {
+        background-color: #343a40; /* Color de fondo para la fila del encabezado */
+        color: #fff; /* Color del texto en el encabezado */
+    }
+
+    .table tbody button {
+        margin: 0 5px;
+    }
+
+    .table tfoot {
+        background-color: #f8d7da; /* Color de fondo para la fila del pie de página */
+    }
+   
+  
+    .ultimaFila {
+        background-color: #b3b8be; /* Nuevo color para la última fila de "Total productos" */
+    }
+
+    .quantity-buttons input {
+        width: 45px; /* Ajusta el valor según tus preferencias */
+        vertical-align: middle; /* Alinea verticalmente el input con los botones */
+        margin: 0 5px; /* Ajusta el margen para controlar la separación */
+        padding: 5px; /* Añade relleno para mejorar la apariencia */
+        border: 1px solid #ced4da; /* Añade un borde para un aspecto más definido */
+        border-radius: 4px; /* Añade esquinas redondeadas para un aspecto más suave */
+        outline: none; /* Elimina el contorno predeterminado del input */
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Añade transiciones para cambios suaves */
+    }
+
+    .quantity-buttons input:focus {
+        border-color: #80bdff; /* Cambia el color del borde al enfocar el input */
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Añade un resplandor al enfocar el input */
+    }
+
+
+@media (max-width: 767px) {
+        /* Estilos específicos para pantallas más pequeñas */
+        .quantity-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quantity-buttons button {
+            margin: 0;
+        }
+
+        .quantity-buttons input {
+            width: 40px; /* Ajusta el valor según tus preferencias */
+        }
+
+        /* Añade estilos para centrar verticalmente el contenido en la última fila */
+        #total-products-quantity,
+        #total {
+            vertical-align: middle;
+        }
+    }
