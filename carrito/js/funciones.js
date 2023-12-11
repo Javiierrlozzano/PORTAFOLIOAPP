@@ -24,7 +24,7 @@ function checkEmptyCart() {
     var tbody = document.getElementById('items');
     var products = document.querySelectorAll('.product');
 
-    // Si no hay productos en el carrito, mostrar mensaje
+    // Si no hay productos en el carrito, mostrar mens
     if (products.length === 0) {
         tbody.innerHTML = '<tr><td style="background-color: #FFCDD4;" colspan="5"><b>El carrito está vacío!</b></td></tr>';
     }

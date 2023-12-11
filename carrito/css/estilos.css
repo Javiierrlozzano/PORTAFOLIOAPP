@@ -41,7 +41,7 @@
 
 
 @media (max-width: 767px) {
-        /* Estilos específicos para pantallas más pequeñas */
+        /* Estilos específicos para pantallas más pequeña */
         .quantity-buttons {
             display: flex;
             justify-content: space-between;
